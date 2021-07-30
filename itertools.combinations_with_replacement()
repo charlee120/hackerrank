@@ -1,0 +1,4 @@
+#charlee stick
+from itertools import combinations_with_replacement
+s,p = input().split()
+print(*[''.join(p) for p in combinations_with_replacement(sorted(s),int(p))],sep='\n')
