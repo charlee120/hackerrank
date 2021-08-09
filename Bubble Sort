@@ -12,11 +12,11 @@ import sys
 # The function accepts INTEGER_ARRAY a as parameter.
 #
 
-def countSwaps(l):
+def countSwaps(l):#Bubble Sort
     swap=0
     c=len(l)
-    for i in range (len(l)-1,0,-1):
-        for j in range (i):
+    for i in range (len(l)-1,0,-1):# This loop is execute inner loop
+        for j in range (i):  #This loop is swap the elaments in list 
             if l[j]>l[j+1]:
                 tmp = l[j]
                 l[j] = l[j+1]
