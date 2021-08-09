@@ -1,0 +1,3 @@
+s, n = input().strip(), int(input().strip())1     # get input 
+#"a" count of full string * number of string repeats + "a" count of last string.
+print(s.count("a") * (n // len(s)) + s[:n % len(s)].count("a"))
