@@ -1,0 +1,37 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'countSwaps' function below.
+#
+# The function accepts INTEGER_ARRAY a as parameter.
+#
+
+def countSwaps(l):
+    swap=0
+    c=len(l)
+    for i in range (len(l)-1,0,-1):
+        for j in range (i):
+            if l[j]>l[j+1]:
+                tmp = l[j]
+                l[j] = l[j+1]
+                l[j+1] = tmp
+                swap+=1
+    print("Array is sorted in {0} swaps.\nFirst Element: {1}\nLast Element: {2}".format(swap,l[0],l[c-1]))
+    
+    
+    
+    
+   
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    a = list(map(int, input().rstrip().split()))
+
+    countSwaps(a)
