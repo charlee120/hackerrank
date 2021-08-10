@@ -1,0 +1,25 @@
+
+def miniMaxSum(arr):
+    
+    sum1=0
+    count=[]   #sum of all numbers in list
+    for j in range(5):  
+        for i in arr:  # spliting each number and add 
+            c=int(i)
+            sum1+=c
+        s=sum1-arr[j]
+        sum1=0
+        count.append(s) #adding the numbers to count
+        p=sorted(count)
+    print(p[0],p[(len(p)-1)]) # first and last number
+        
+        
+
+if __name__ == '__main__':
+
+    arr=list(map(int,input().split(" ")))
+
+    miniMaxSum(arr)
+    
+
+   
