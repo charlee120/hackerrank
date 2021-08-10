@@ -1,0 +1,7 @@
+totalrow =int(input())
+for row in range(1, totalrow+1):
+    for space in range(1,(totalrow-row)+1):
+       print(" ", end="")
+    for symble in range(1, row+1):
+        print("#", end="")
+    print()
