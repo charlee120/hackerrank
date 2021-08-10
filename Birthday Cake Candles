@@ -1,0 +1,11 @@
+def birthdayCakeCandles(candles):
+    x=max(candles)         #find maximun value of number in list
+    print(candles.count(x)) # counting x in list
+    
+
+if __name__ == '__main__':
+    
+    p = input()
+    candles = list(map(int, input().rstrip().split()))
+
+    result = birthdayCakeCandles(candles)
